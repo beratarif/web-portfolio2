@@ -82,7 +82,7 @@ cd portfolio
 
 ## 🌐 Canlı Demo
 
-[🔗 Siteyi Görüntüle](https://beratgnl.online/)
+[🔗 Siteyi Görüntüle](https://nyxion.netlify.app/)
 
 ## 📌 Öne Çıkan Projeler
 
