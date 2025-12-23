@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berat Arif Gönül | Geliştirici Portfolyo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 1s ease-in forwards;
+      }
+
+      .animate-delay-1 {
+        animation-delay: 0.1s;
+      }
+
+      .animate-delay-2 {
+        animation-delay: 0.2s;
+      }
+
+      .animate-delay-3 {
+        animation-delay: 0.3s;
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Lucide Icons -->
+    <script type="module">
+      import {
+        createIcons,
+        icons,
+      } from "https://unpkg.com/lucide@latest/dist/esm/lucide.js";
+      createIcons({ icons });
+    </script>
+  </head>
+
+  <body class="bg-gray-950 text-white font-sans">
+    <!-- NAVBAR MENU -->
+    <nav
+      class="opacity-0 animate-fade-in fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur border-b border-white/5 text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 font-extrabold text-xl">
+            <a
+              class="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"
+              href="#hero"
+            >
+              Berat Arif Gönül</a
+            >
+          </div>
+
+          <!-- Hamburger Icon (Mobile) -->
+          <div class="md:hidden">
+            <button
+              id="menu-toggle"
+              class="text-gray-300 hover:text-white focus:outline-none"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Menu Items (Desktop) -->
+          <div class="hidden md:flex items-center gap-8 text-sm">
+            <a class="relative group" href="#hero">
+              <span class="text-gray-300 group-hover:text-white transition">
+                Ana Sayfa
+              </span>
+              <span
+                class="absolute left-0 -bottom-1 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+
+            <a class="relative group" href="#about">
+              <span class="text-gray-300 group-hover:text-white transition">
+                Hakkımda
+              </span>
+              <span
+                class="absolute left-0 -bottom-1 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a class="relative group" href="#project">
+              <span class="text-gray-300 group-hover:text-white transition">
+                Projelerim
+              </span>
+              <span
+                class="absolute left-0 -bottom-1 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a class="relative group" href="#services">
+              <span class="text-gray-300 group-hover:text-white transition">
+                Hizmetler
+              </span>
+              <span
+                class="absolute left-0 -bottom-1 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a class="relative group" href="#contact">
+              <span class="text-gray-300 group-hover:text-white transition">
+                İletişim
+              </span>
+              <span
+                class="absolute left-0 -bottom-1 h-[2px] w-0 bg-purple-500 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobil Menü -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="#" class="block py-2 text-gray-300 hover:text-white"
+          >Ana sayfa</a
+        >
+        <a href="#about" class="block py-2 text-gray-300 hover:text-white"
+          >Hakkımda</a
+        >
+        <a href="#projects" class="block py-2 text-gray-300 hover:text-white"
+          >Projeler</a
+        >
+        <a href="#services" class="block py-2 text-gray-300 hover:text-white"
+          >Hizmetler</a
+        >
+        <a href="#contact" class="block py-2 text-gray-300 hover:text-white"
+          >İletişim</a
+        >
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="opacity-0 scroll-animate relative flex items-center justify-center min-h-screen text-center px-6 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('assets/img/IMG_20250305_081118.jpg')"
+    >
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+
+      <div class="relative z-10 max-w-2xl">
+        <h2
+          class="animate-delay-1 md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent"
+        >
+          Berat Arif Gönül
+        </h2>
+
+        <p class="animate-delay-2 text-gray-200 text-lg md:text-xl mb-8">
+          Frontend odaklı • Modern arayüzler • Etkili kullanıcı deneyimi
+        </p>
+
+        <div class="flex gap-4 justify-center">
+          <a
+            href="#projects"
+            class="px-6 py-3 rounded-full font-semibold bg-purple-600 hover:bg-purple-700 transition"
+          >
+            Projelerim
+          </a>
+
+          <a
+            href="#about"
+            class="px-6 py-3 rounded-full font-semibold border border-white/30 hover:bg-white/10 transition"
+          >
+            Hakkımda
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 animate-bounce"
+      >
+        ↓
+      </div>
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section
+      id="about"
+      class="py-16 bg-gray-950 text-white opacity-0 scroll-animate"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <h2
+          class="animate-delay-3 text-purple-400 text-4xl font-bold mb-8 text-center"
+        >
+          Hakkımda
+        </h2>
+        <p class="text-center text-gray-500 mt-2 mb-12">
+          Kısaca ben kimim ve Ne yapıyorum ?
+        </p>
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="relative">
+            <div
+              class="absolute inset-0 rounded-full bg-purple-500/30 blur-xl"
+            ></div>
+            <img
+              src="assets/img/7b6def1234d467fcc28e77c9cc7e3eda.gif"
+              class="relative w-40 h-40 rounded-full object-cover border-4 border-gray-800"
+            />
+          </div>
+          <div class="text-lg leading-relaxed max-w-3xl">
+            <div
+              class="group bg-gray-800/80 backdrop-blur border border-white/10 p-7 rounded-2xl hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300"
+            >
+              <!-- Başlık -->
+              <div class="flex items-center gap-3 mb-4">
+                <span
+                  class="w-11 h-11 flex items-center justify-center rounded-xl bg-purple-500/20 text-purple-400 text-xl"
+                >
+                  🎨
+                </span>
+                <h4 class="text-purple-400 font-bold text-xl">
+                  Frontend Geliştirme
+                </h4>
+              </div>
+
+              <!-- Ana açıklama -->
+              <p class="text-gray-300 text-sm leading-relaxed">
+                Kullanıcı deneyimini merkeze alan, hızlı ve modern arayüzler
+                geliştiriyorum. Tasarım ile kod arasındaki dengeyi önemsiyor,
+                hem estetik hem de performanslı çözümler üretmeye odaklanıyorum.
+              </p>
+
+              <!-- Detay -->
+              <p class="text-gray-400 text-sm leading-relaxed mt-3">
+                Responsive tasarım, component mantığı ve temiz CSS yapıları
+                benim için olmazsa olmaz. Mikro animasyonlar ve akıcı geçişlerle
+                arayüzleri daha canlı hâle getiriyorum.
+              </p>
+
+              <!-- Yetenekler -->
+              <div class="flex flex-wrap gap-2 mt-5">
+                <span
+                  class="text-xs px-3 py-1 rounded-full bg-purple-500/20 text-purple-300"
+                >
+                  Tailwind CSS
+                </span>
+                <span
+                  class="text-xs px-3 py-1 rounded-full bg-blue-500/20 text-blue-300"
+                >
+                  JavaScript
+                </span>
+                <span
+                  class="text-xs px-3 py-1 rounded-full bg-gray-700 text-gray-300"
+                >
+                  HTML5
+                </span>
+                <span
+                  class="text-xs px-3 py-1 rounded-full bg-pink-500/20 text-pink-300"
+                >
+                  UI / UX
+                </span>
+                <span
+                  class="text-xs px-3 py-1 rounded-full bg-green-500/20 text-green-300"
+                >
+                  Responsive
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="scroll-animate opacity-0 px-5 py-16">
+      <h3 class="text-2xl font-bold mb-4 text-center">Projelerim</h3>
+      <p class="text-gray-400 text-center mb-12 max-w-xl mx-auto">
+        Öğrenme sürecimde geliştirdiğim ve kendimi ileri taşıyan projeler
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Proje Kartı 1 -->
+
+        <div
+          class="group bg-gray-800 rounded-2xl flex flex-col overflow-hidden hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 shadow-md"
+        >
+          <div class="p-5">
+            <h4
+              class="text-lg font-semibold text-purple-300 mb-2 group-hover:text-purple-400 transition"
+            >
+              Code Proo
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Yazılım öğrenmek isteyenler için çoklu programlama dillerini
+              içeren bir web platformu.
+            </p>
+          </div>
+          <a
+            href="https://codeproo.netlify.app/"
+            target="_blank"
+            class="mt-auto block text-center bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 px-4 py-2 text-sm font-medium"
+            >Siteye Git →</a
+          >
+        </div>
+
+        <!-- Proje Kartı 2 -->
+
+        <div
+          class="group bg-gray-800 rounded-2xl flex flex-col overflow-hidden hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 shadow-md"
+        >
+          <div class="p-5">
+            <h4
+              class="text-lg font-semibold text-purple-300 mb-2 group-hover:text-purple-400 transition"
+            >
+              React Portföy Sitesi
+            </h4>
+            <p class="text-gray-400 text-sm">
+              React kullanarak frontend becerilerimi geliştirmek için
+              oluşturduğum portföy sitesi.
+            </p>
+          </div>
+          <a
+            href="https://reactfirtweb.netlify.app/"
+            target="_blank"
+            class="mt-auto block text-center bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 px-4 py-2 text-sm font-medium"
+            >Siteye Git →</a
+          >
+        </div>
+
+        <!-- Proje Kartı 3 -->
+
+        <div
+          class="group bg-gray-800 rounded-2xl flex flex-col overflow-hidden hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 shadow-md"
+        >
+          <div class="p-5">
+            <h4
+              class="text-lg font-semibold text-purple-300 mb-2 group-hover:text-purple-400 transition"
+            >
+              Hava Durumu Uygulaması
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Harici API kullanılarak geliştirilmiş bir hava durumu uygulaması.
+            </p>
+          </div>
+          <a
+            href="https://havadurumujson.netlify.app/"
+            target="_blank"
+            class="mt-auto block text-center bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 px-4 py-2 text-sm font-medium"
+            >Siteye Git →</a
+          >
+        </div>
+
+        <!-- Proje Kartı 4 -->
+
+        <div
+          class="group bg-gray-800 rounded-2xl flex flex-col overflow-hidden hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 shadow-md"
+        >
+          <div class="p-5">
+            <h4
+              class="text-lg font-semibold text-purple-300 mb-2 group-hover:text-purple-400 transition"
+            >
+              Not Defteri
+            </h4>
+            <p class="text-gray-400 text-sm">
+              JSON yapısı kullanılarak kayıt alan bir not defteri uygulaması.
+            </p>
+          </div>
+          <a
+            href="https://notdefterijson.netlify.app/"
+            target="_blank"
+            class="mt-auto block text-center bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 px-4 py-2 text-sm font-medium"
+            >Siteye Git →</a
+          >
+        </div>
+
+        <!-- Proje Kartı 5 -->
+
+        <div
+          class="group bg-gray-800 rounded-2xl flex flex-col overflow-hidden hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 shadow-md"
+        >
+          <div class="p-5">
+            <h4
+              class="text-lg font-semibold text-purple-300 mb-2 group-hover:text-purple-400 transition"
+            >
+              Tailwind CSS Portföy
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Tailwind CSS ile geliştirilmiş modern ve sade bir portföy sitesi.
+            </p>
+          </div>
+          <a
+            href="https://beratgnl.online/"
+            target="_blank"
+            class="mt-auto block text-center bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 px-4 py-2 text-sm font-medium"
+            >Siteye Git →</a
+          >
+        </div>
+
+        <!-- Proje Kartı 6 -->
+
+        <div
+          class="group bg-gray-800 rounded-2xl flex flex-col overflow-hidden hover:scale-[1.03] hover:shadow-purple-500/20 transition-all duration-300 shadow-md"
+        >
+          <div class="p-5">
+            <h4
+              class="text-lg font-semibold text-purple-300 mb-2 group-hover:text-purple-400 transition"
+            >
+              JSON Login Sistemi
+            </h4>
+            <p class="text-gray-400 text-sm">
+              Kullanıcı verilerinin JSON formatında tutulduğu bir giriş sistemi.
+            </p>
+          </div>
+          <a
+            href="https://jsonlogin.netlify.app/"
+            target="_blank"
+            class="mt-auto block text-center bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 px-4 py-2 text-sm font-medium"
+            >Siteye Git →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section id="services" class="py-20 bg-gray-950 opacity-0 scroll-animate">
+      <h3 class="text-3xl font-bold text-center text-purple-300">Hizmetler</h3>
+      <p class="text-gray-500 text-center mt-2 mb-14 max-w-xl mx-auto">
+        Odaklandığım alanlar ve sunduğum çözümler
+      </p>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center text-gray-300"
+      >
+        <div
+          class="relative group bg-gray-800/80 backdrop-blur border border-white/5 p-7 rounded-2xl hover:-translate-y-2 hover:shadow-xl hover:shadow-purple-500/30 transition-all duration-300"
+        >
+          <div
+            class="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-xl bg-purple-500/20 text-purple-400 text-2xl"
+          >
+            💻
+          </div>
+
+          <h4 class="text-xl font-bold text-purple-300 mb-3">
+            Frontend Web Geliştirme
+          </h4>
+
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Modern, hızlı ve mobil uyumlu web arayüzleri geliştiriyorum.
+            Kullanıcı deneyimi, performans ve temiz kod önceliğimdir.
+          </p>
+
+          <ul class="mt-4 space-y-2 text-sm text-gray-400">
+            <li>✔ Responsive Tasarım</li>
+            <li>✔ Tailwind CSS & JavaScript</li>
+            <li>✔ SEO & Performans Odaklı</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800/70 p-6 rounded-2xl border border-white/5">
+          <h4 class="text-lg font-semibold text-purple-300 mb-2">
+            UI / UX İyileştirme
+          </h4>
+          <p class="text-gray-400 text-sm">
+            Mevcut sitelerin tasarım ve kullanıcı deneyimini modernleştiriyorum.
+          </p>
+        </div>
+        <div class="bg-gray-800/70 p-6 rounded-2xl border border-white/5">
+          <h4 class="text-lg font-semibold text-purple-300 mb-2">
+            Web Performans Optimizasyonu
+          </h4>
+          <p class="text-gray-400 text-sm">
+            Sayfa yüklenme sürelerini düşürerek daha hızlı deneyimler sunuyorum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim -->
+    <section
+      id="contact"
+      class="py-24 bg-gray-950 text-center opacity-0 scroll-animate"
+    >
+      <h3 class="text-3xl font-bold text-purple-300">İletişim</h3>
+      <p class="text-gray-500 mt-2 mb-12">
+        Benimle kolayca iletişime geçebilirsin
+      </p>
+
+      <p class="mb-8 text-gray-400 max-w-xl mx-auto leading-relaxed">
+        Bir proje fikrin mi var veya birlikte çalışmak mı istiyorsun? Bana mail
+        atabilir ya da sosyal medya hesaplarımdan ulaşabilirsin.
+      </p>
+
+      <a
+        href="mailto:gonulberat1@gmail.com"
+        class="inline-block mb-10 px-6 py-3 rounded-full bg-purple-600/20 text-purple-400 hover:bg-purple-600 hover:text-white transition"
+      >
+        gonulberat1@gmail.com
+      </a>
+
+      <div class="flex justify-center gap-6">
+        <a
+          href="https://github.com/beratarif"
+          target="_blank"
+          class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-800/80 border border-white/5 text-purple-400 hover:bg-purple-600 hover:text-white transition"
+          aria-label="GitHub"
+        >
+          <i data-lucide="github" class="w-6 h-6"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/berat-gönül-17ab96358"
+          target="_blank"
+          class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-800/80 border border-white/5 text-purple-400 hover:bg-purple-600 hover:text-white transition"
+          aria-label="LinkedIn"
+        >
+          <i data-lucide="linkedin" class="w-6 h-6"></i>
+        </a>
+
+        <a
+          href="https://instagram.com/berat.a.g"
+          target="_blank"
+          class="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-800/80 border border-white/5 text-purple-400 hover:bg-purple-600 hover:text-white transition"
+          aria-label="Instagram"
+        >
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </a>
+      </div>
+
+      <p class="text-xs text-gray-600 mt-12">
+        © 2025 Berat Arif Gönül — Frontend Developer
+      </p>
+    </section>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      // Scroll animasyonu
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Görünür alana girince → Belir
+            entry.target.classList.add("animate-fade-in");
+            entry.target.classList.remove("opacity-0");
+          } else {
+            // Görünür alandan çıkınca → Kaybol
+            entry.target.classList.remove("animate-fade-in");
+            entry.target.classList.add("opacity-0");
+          }
+        });
+      }, observerOptions);
+
+      // Animasyonlu elementleri seç
+      document.querySelectorAll(".scroll-animate").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
